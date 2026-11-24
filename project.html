@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A photographic project by Tony Dang.">
+  <meta name="theme-color" content="#000000">
+  <title>Project — TONDYNO PROJECT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/projects.js" defer></script>
+  <script src="js/project-detail.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">TONDYNO<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="mailto:hello@tondyno.com">Contact</a>
+    </nav>
+    <span class="header-note">Analog photographer · Prague</span>
+  </header>
+
+  <main class="page-shell detail-page">
+    <a class="back-link" href="index.html">← All projects</a>
+    <p class="eyebrow" id="project-category">PROJECT</p>
+    <h1 id="project-title">Loading project<span class="accent">.</span></h1>
+    <p class="detail-description" id="project-description"></p>
+    <dl class="project-meta" id="project-meta"></dl>
+    <section class="detail-gallery" id="detail-gallery" aria-label="Project photographs"></section>
+    <section class="about-section detail-about">
+      <p class="eyebrow">ABOUT THIS PROJECT</p>
+      <p id="project-about"></p>
+    </section>
+    <nav class="project-pagination" aria-label="Project navigation">
+      <a id="previous-project" href="#" hidden>← Previous project</a>
+      <a id="next-project" href="#" hidden>Next project →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <span>TONY DANG © <span id="year"></span></span>
+    <span>PRAGUE, CZECH REPUBLIC</span>
+    <a href="https://www.instagram.com/tondyno/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+  </footer>
+</body>
+</html>

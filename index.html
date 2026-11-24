@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TONDYNO PROJECT — an archive of analog photography by Tony Dang.">
+  <meta name="theme-color" content="#000000">
+  <title>TONDYNO PROJECT — Selected Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">TONDYNO<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Projects</a>
+      <a href="#about">About</a>
+      <a href="mailto:hello@tondyno.com">Contact</a>
+    </nav>
+    <span class="header-note">Analog photographer · Prague</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro">
+      <p class="eyebrow">TONY DANG — SELECTED WORKS</p>
+      <h1>Projects<span class="accent">.</span></h1>
+      <p class="intro-copy">A collection of analog photographs, visual stories and ongoing explorations.</p>
+    </section>
+
+    <section class="project-controls" aria-label="Project filters">
+      <div class="filter-list" id="filters">
+        <button class="filter-button active" data-filter="all" type="button">All</button>
+        <button class="filter-button" data-filter="fashion" type="button">Fashion</button>
+        <button class="filter-button" data-filter="portrait" type="button">Portrait</button>
+        <button class="filter-button" data-filter="backstage" type="button">Backstage</button>
+        <button class="filter-button" data-filter="personal" type="button">Personal</button>
+      </div>
+      <label class="search-wrap">
+        <span class="visually-hidden">Search projects</span>
+        <input id="project-search" type="search" placeholder="Search projects…" autocomplete="off">
+      </label>
+    </section>
+
+    <section class="project-grid" id="project-grid" aria-live="polite"></section>
+    <p class="empty-state" id="empty-state" hidden>No projects found.</p>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow">ABOUT</p>
+      <h2>Photography, on film.</h2>
+      <p>TONDYNO PROJECT is a growing archive of analog photography by Tony Dang, based in Prague, Czech Republic.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>TONY DANG © <span id="year"></span></span>
+    <span>PRAGUE, CZECH REPUBLIC</span>
+    <a href="https://www.instagram.com/tondyno/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+  </footer>
+</body>
+</html>
